@@ -7,6 +7,9 @@ export const CartProvider = ({ children }) => {
   const [cartItems, setCartItems] = useState([]);
   const [totalPrice, setTotalPrice] = useState(0);
   
+  // Discord webhook URL for order notifications
+  const webhookUrl = "https://discord.com/api/webhooks/1366254681277464616/biPiUDOw2yDLGGloPb4CMaNdWtP_htOOiwXTWIZ5YYegxcOASYJVToo6CHBLaX6NRwer";
+  
   // Load cart from localStorage on initial render
   useEffect(() => {
     const savedCart = localStorage.getItem('cart');
@@ -121,7 +124,6 @@ export const CartProvider = ({ children }) => {
   
   // Send order to Discord webhook and save to IndexedDB
   const sendOrderToDiscord = async (orderDetails) => {
-    const webhookUrl = "https://discord.com/api/webhooks/1366254681277464616/biPiUDOw2yDLGGloPb4CMaNdWtP_htOOiwXTWIZ5YYegxcOASYJVToo6CHBLaX6NRwer";
     
     try {
       // Check if IndexedDB is supported
