@@ -1,0 +1,266 @@
+.admin-login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  background-color: #f8f9fa;
+}
+
+.admin-login-form {
+  width: 100%;
+  max-width: 400px;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.admin-login-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.admin-login-header h1 {
+  color: #4285F4;
+  margin-bottom: 0.5rem;
+}
+
+.admin-login-error {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 0.75rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.btn-block {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+.admin-login-footer {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+/* Admin Layout Styles */
+.admin-layout {
+  display: flex;
+  min-height: calc(100vh - 140px);
+}
+
+.admin-sidebar {
+  width: 250px;
+  background-color: #f8f9fa;
+  border-right: 1px solid #e9ecef;
+  padding: 1.5rem;
+}
+
+.admin-sidebar h2 {
+  color: #4285F4;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.admin-nav {
+  list-style: none;
+  padding: 0;
+}
+
+.admin-nav li {
+  margin-bottom: 0.5rem;
+}
+
+.admin-nav a {
+  display: block;
+  padding: 0.75rem 1rem;
+  color: #5f6368;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.admin-nav a:hover {
+  background-color: #e9ecef;
+  color: #4285F4;
+}
+
+.admin-nav a.active {
+  background-color: #4285F4;
+  color: white;
+}
+
+.admin-content {
+  flex: 1;
+  padding: 2rem;
+}
+
+.admin-header {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.admin-header h1 {
+  color: #4285F4;
+}
+
+/* Admin Dashboard Styles */
+.dashboard-stats .card {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.dashboard-stats .card:hover {
+  transform: translateY(-5px);
+}
+
+.stats-number {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #4285F4;
+  margin: 1rem 0;
+}
+
+/* Admin Products Styles */
+.product-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.product-form {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.admin-add-btn {
+  background-color: #4285F4;
+  border-color: #4285F4;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.admin-add-btn:hover {
+  background-color: #3367d6;
+  border-color: #3367d6;
+}
+
+.product-list-container {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.product-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.product-search {
+  flex: 1;
+  max-width: 300px;
+}
+
+.product-search-input {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.product-count {
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+.product-table-container {
+  padding: 0 1rem 1rem;
+}
+
+.product-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0.5rem;
+}
+
+.product-table th,
+.product-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.product-table th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+  position: relative;
+}
+
+.sortable-header {
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+  padding-right: 1.5rem;
+}
+
+.sortable-header:hover {
+  background-color: #e9ecef;
+}
+
+.sort-indicator {
+  position: absolute;
+  right: 0.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.8rem;
+}
+
+.product-row {
+  transition: background-color 0.2s ease;
+}
+
+.product-row:hover {
+  background-color: #f8f9fa;
+}
+
+.product-table img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  border-radius: 4px;
+  border: 1px solid #e9ecef;
+}
